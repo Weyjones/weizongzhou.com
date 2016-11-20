@@ -1,8 +1,9 @@
 <html>
 <link rel="stylesheet" type="text/css" href="CSS/background.css">
 <link rel="stylesheet" type="text/css" href="CSS/card.css">
+<link rel="stylesheet" type="text/css" href="CSS/modal.css">
 <link rel="stylesheet" type="text/css" href="CSS/project.css">
-
+<link rel="stylesheet" type="text/css" href="CSS/fundation.css">
 <title>About Me</title>
 	<body>
 	<div class="content">
@@ -20,8 +21,8 @@
   
   <div class="panel info">
     <div>
-    	<h4>ABOUT ME</h4>
-    	<p>I am a senior undergraduate student at the University of Washington. My major is Computer Science & Software Engineering. I've learnt Git, HTML/CSS/JavaScript, AngularJS, PHP and MySQL, please visit the projects page or my GitHub profile. I am currently looking for a SDE/Web/Mobile Development internship for Summer 2017</p>
+    	<h3>ABOUT ME</h3>
+    	<p>I am a senior undergraduate student at the University of Washington. My major is Computer Science & Software Engineering. I've learnt Git, HTML/CSS/JavaScript, AngularJS, PHP and MySQL, please visit the projects page or my GitHub profile.</p>
     </div>
     
     <ul class="social">
@@ -37,18 +38,18 @@
   
 </section>
 </div>
-<div id="stack1" class="project-container start">
+	<div id="stack1" class="project-container start">
 	        <section id="project1" class="project project1">
-	             <h1>project 1</h1>
-	 <a href="#">
+	             <h4>Lady Problems Global Hackathon Winner</h4>
+	 			<a href="" data-modal="#modal" class="modal__trigger">
 	                <img src="http://www.placehold.it/500x200" />
 	            </a>
 
-	            <p>This was the first period where evidence of dinosaurs is present, though they were not there at the very beginning. It began right after the Permian mass extinction which wiped out 90% of all life and marks the beginning of the Mesozoic Era.</p>
+	            <p>Develop a web dashboard to display real-time meeting participation data such as individual speak time and interruptions, create backend APIs to process and analyze real-time data streaming. Technologies used: HTML, CSS, AngularJS.....</p>
 	        </section>
 	        <section id="project2" class="project project2">
-	             <h1>project 2</h1>
-	 <a href="#">
+	             <h1 >project 2</h1>
+	 			<a href="" data-modal="#modal2" class="modal__trigger">
 	                <img src="http://www.placehold.it/500x200" />
 	            </a>
 
@@ -56,15 +57,64 @@
 	        </section>
 	        <section id="project3" class="project project3">
 	             <h1>project 3</h1>
-	 <a href="#">
+				<a href="" data-modal="#modal3" class="modal__trigger">
 	                <img src="http://www.placehold.it/500x200" />
 	            </a>
 
 	            <p>This was the first period where evidence of dinosaurs is present, though they were not there at the very beginning. It began right after the Permian mass extinction which wiped out 90% of all life and marks the beginning of the Mesozoic Era.</p>
 	        </section>
     </div>
+    <!-- Modal -->
+	<div id="modal" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Big Modal</h1>
+				<h3>This modal is pretty tall.</h3>
+				
+				<p><img src="IMG/hackathon.jpg" alt="" /></p>
+				<p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+				<p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Big Modal</h1>
+				<h3>This modal is pretty tall.</h3>
+				<p>Selfies normcore four dollar toast four loko listicle artisan. Hoodie Marfa authd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+				<p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal3" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1>Modal 3</h1>
+				<p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi.</p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
 	</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="JS/card.js"></script>
 	<script language="JavaScript" type="text/javascript" src="JS/project.js"></script>
+	<script language="JavaScript" type="text/javascript" src="JS/modal.js"></script>
 </html>
