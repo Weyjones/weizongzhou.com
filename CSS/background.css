@@ -4,9 +4,7 @@ html, body {
 
 body {
   min-height: 100%;
-  background: black;
-  -webkit-animation: colors 14s infinite linear;
-          animation: colors 14s infinite linear;
+  background: url(https://dl.dropbox.com/u/47224881/Demo/wood-tile-background.jpg);
 }
 
 @-webkit-keyframes colors {

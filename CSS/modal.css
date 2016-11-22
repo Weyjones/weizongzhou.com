@@ -46,19 +46,18 @@ a {
           align-items: flex-start;
 }
 .modal__bg {
-  background: transparent;
+  min-height: 100%;
+  background: url(https://dl.dropbox.com/u/47224881/Demo/wood-tile-background.jpg);
 }
 .modal__dialog {
   max-width: 600px;
   padding: 1.2rem;
 }
 .modal__content {
-  will-change: transform, opacity;
   position: relative;
   padding: 2.4rem;
   background: white;
   background-clip: padding-box;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.65);
   opacity: 0;
   -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
@@ -84,8 +83,7 @@ a {
 .modal__trigger--active {
   z-index: 10;
 }
-.modal__trigger:hover {
-}
+
 #modal__temp {
   will-change: transform, opacity;
   position: absolute;
@@ -105,10 +103,6 @@ a {
 /**
  * Demo specific CSS
  */
-body {
-  height: 100vh;
-  background: #f44336;
-}
 img {
   max-width: 100%;
 }
