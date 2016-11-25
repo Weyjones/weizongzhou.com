@@ -136,6 +136,7 @@ a:hover {
   list-style: none;
   margin: 0;
   text-align: center;
+  opacity: 0;
 }
 .card .social li {
   display: inline-block;
@@ -165,6 +166,9 @@ a:hover {
     -webkit-transform: translateX(20%);
             transform: translateX(20%);
     width: 150%;
+  }
+  .card:hover .social {
+    opacity: 1;
   }
 }
 
