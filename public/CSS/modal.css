@@ -47,7 +47,7 @@ a {
 }
 .modal__bg {
   min-height: 100%;
-  background: url(https://dl.dropbox.com/u/47224881/Demo/wood-tile-background.jpg);
+  background: url(http://jaysalvat.github.io/jquery.facedetection/assets/background.jpg);
 }
 .modal__dialog {
   max-width: 600px;
@@ -178,4 +178,3 @@ img {
 .demo-close:hover {
   background: rgba(0,0,0,0.6);
 }
-

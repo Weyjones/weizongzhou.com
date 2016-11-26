@@ -1,0 +1,119 @@
+.button-group {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  top: 290px;
+  margin: auto;
+  z-index:1200;
+}
+
+.button-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.button {
+  padding-top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-height: 50px;
+  max-width: 200px;
+  left: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 300;
+  cursor: default;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5), 0 1px 8px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+.button.front {
+  background: #243040;
+  color: #fff;
+}
+.button.back {
+  background: #fff;
+  color: #000;
+}
+
+#button_6:hover .front {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-animation: front 2.5s;
+          animation: front 2.5s;
+}
+@-webkit-keyframes front {
+  10% {
+    -webkit-transform: rotateZ(100deg);
+            transform: rotateZ(100deg);
+  }
+  20% {
+    -webkit-transform: rotateZ(65deg);
+            transform: rotateZ(65deg);
+  }
+  30% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  35% {
+    -webkit-transform: rotateZ(95deg);
+            transform: rotateZ(95deg);
+    top: 0;
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+    top: 100px;
+    opacity: 0;
+  }
+}
+@keyframes front {
+  10% {
+    -webkit-transform: rotateZ(100deg);
+            transform: rotateZ(100deg);
+  }
+  20% {
+    -webkit-transform: rotateZ(65deg);
+            transform: rotateZ(65deg);
+  }
+  30% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  35% {
+    -webkit-transform: rotateZ(95deg);
+            transform: rotateZ(95deg);
+    top: 0;
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+    top: 100px;
+    opacity: 0;
+  }
+}
