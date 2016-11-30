@@ -56,8 +56,8 @@
 #button_6:hover .front {
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
-  -webkit-animation: front 2.5s;
-          animation: front 2.5s;
+  -webkit-animation: front 5s;
+          animation: front 5s;
 }
 @-webkit-keyframes front {
   10% {

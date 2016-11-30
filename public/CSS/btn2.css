@@ -1,0 +1,66 @@
+
+
+/* Base Button Style */
+.btn {
+	z-index: 11;
+  transform-style: flat;
+}
+.btn:before, .btn:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  transition: all 250ms ease-out;
+}
+
+
+
+
+
+/* Curl effects – curls corners on hover */
+.paper-curl:before, .paper-curl:after,
+.paper-curl-right:before,
+.paper-curl-right:after {
+	position: absolute;
+  z-index: -2;
+  bottom: 24px;
+  width: 50%;
+  height: 55%;
+  max-width: 400px;
+  max-height: 200px;
+  box-shadow: 1px 8px 44px rgba(31, 31, 31, 0.6);
+}
+.paper-curl:before,
+.paper-curl-right:before {
+  left: 10px;
+}
+.paper-curl:after,
+.paper-curl-right:after {
+  right: 10px;
+}
+.paper-curl:hover:before, .paper-curl:hover:after,
+.paper-curl-right:hover:before,
+.paper-curl-right:hover:after {
+  box-shadow: 1px 22px 22px rgba(31, 31, 31, 0.8);
+}
+.paper-curl:hover:before,
+.paper-curl-right:hover:before {
+  transform: skew(-8deg) rotate(-3deg);
+}
+.paper-curl:hover:after,
+.paper-curl-right:hover:after {
+  transform: skew(2deg) rotate(1deg);
+}
+
+.paper-curl:hover {
+  border-radius: 0 0 40% 40% / 0 0 30% 30%;
+}
+
+.paper-curl-right:before {
+  display: none;
+}
+.paper-curl-right:hover {
+  border-radius: 0 0 50% 0 / 0 0 8% 0;
+  z-index: 11;
+}
+
+
