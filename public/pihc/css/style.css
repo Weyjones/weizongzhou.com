@@ -1,0 +1,58 @@
+.banner{
+	width:100%;
+}
+#map{
+	position: initial ! important;
+	height:100%;
+
+}
+.banner .kd-accordion{
+	position:absolute;
+	top:55px;
+	left:7%;
+	width:300px;
+	z-index:10;
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, .4);
+}
+.banner .kd-accordion .accordion{
+	padding:14px;
+	background: rgba(255, 255, 255, 0.95);
+	border-top: 5px solid #435757;
+	font-size:18px;
+	font-weight: bold; 
+  	line-height:30px;
+	color:#435757;
+	float:left;
+	width:100%;
+	cursor:pointer;
+}
+.banner .kd-accordion .accordion-content{
+	background: rgba(255, 255, 255, 0.8); 
+	padding:15px;
+	float:left;
+  	font-size:18px;
+  	font-weight: bold; 
+  	width:100%;
+
+}
+
+a.text-white {
+  color:#435757;
+}
+
+.banner .kd-accordion .accordion span{
+	float:right;
+	height:30px;
+	width:30px;
+	border:solid 1px #fff;
+	border-radius:100%;
+	text-align:center;
+	line-height:26px;
+}
+.infoWindowContent {
+    font-size:  12px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.fa.fa-angle-double-right {padding-right:10px;}

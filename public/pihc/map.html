@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>PIHC front-end demo</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div ng-app="mapsApp" ng-controller="MapCtrl">
+<div class="banner">
+        <div class="kd-accordion">
+            <div class="accordion">Location list
+            <span class="fa fa-angle-right" ng-click="showDetails = ! showDetails"></span>
+            </div>
+            <div class="accordion-content" ng-class="{ 'hidden': ! showDetails }">
+            <div class="col-md-12">
+              
+            </div>
+            	<div class="col-md-12">
+              
+                  <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+                   <a href="#" class="text-white" ng-click="openInfoWindow($event, marker)"></i>  {{marker.title}} </a>
+                  </div>
+               </div>
+            </div>           
+        </div>
+    	<div id="map"></div>
+    </div>
+</div>
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDxcqlp2yAzg0UeyqkZHCLebZx8Qq96XYk'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+
+    <script src="js/map.js"></script>
+
+</body>
+</html>
