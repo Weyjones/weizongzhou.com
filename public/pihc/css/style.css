@@ -8,8 +8,8 @@
 }
 .banner .kd-accordion{
 	position:absolute;
-	top:55px;
-	left:7%;
+	top:175px;
+	left:2%;
 	width:300px;
 	z-index:10;
 	box-shadow: 1px 1px 15px rgba(0, 0, 0, .4);

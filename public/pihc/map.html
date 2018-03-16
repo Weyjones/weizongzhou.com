@@ -15,8 +15,15 @@
 </head>
 
 <body>
+  
   <div ng-app="mapsApp" ng-controller="MapCtrl">
 <div class="banner">
+  <div style="z-index: 10;position: absolute;">
+    <h2>Categories:</h2>
+    <ul>
+      <li ng-repeat="c in categories" ng-click="getAddresses(c)"><button>{{c}}</button></li>
+    </ul>
+  </div>
         <div class="kd-accordion">
             <div class="accordion">Location list
             <span class="fa fa-angle-right" ng-click="showDetails = ! showDetails"></span>

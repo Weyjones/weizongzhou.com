@@ -1,7 +1,7 @@
 var apiVersion = 'v40.0',
     clientId = '3MVG9AJuBE3rTYDjblRTfQeshc.WxoA9r2LUmZctOIzydEhTQaRlrWPRKKtmo0l5k_BYnYXaYdZndJM2fnvFH',
     loginUrl = 'https://test.salesforce.com/',
-    redirectURI = "http://weizongzhou.com/pihc/getdata/oauthcallback.html",
+    redirectURI = "http://localhost:8000/pihc/getdata/oauthcallback.html",
     proxyURL = 'https://cs61.salesforce.com/services/apexrest/engagement',
     client = new forcetk.Client(clientId, loginUrl, proxyURL);
 
